@@ -10,16 +10,14 @@
 <body>
     <!--Header-->
     <header id="home">
-        <div>
+        <div class="text-home">
             <h1>Laboratorio <br /> Clínico HPL </h1>
             <h3>La calidad es nuestro lema</h3>
         </div>
-        <div>
-            <img src="./IMAGENES/lenteMicroscopio.jpg" alt="Microscopio">
-        </div>
     </header>
     <!--NavBar-->
-    <nav>
+    <nav class="navbar">
+        <a href="#home"><img src="" alt="">HPL</a>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#promociones">Promociones</a></li>
@@ -27,30 +25,45 @@
             <li><a href="#ubicacion">Ubicación</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
+        <div>
+
+        </div>
     </nav>
+    <!--Nosotros-->
+    <section id="nosotros">
+        <h2>Laboratorio Clínico HPL</h2>
+        <p>
+            Este sitio web es una página muestra, los datos aquí presentados son ficticios y no representan 
+            atribución ni hacen referencia a alguien, cualquier parecido con la realiad es mera coincidencia.
+            Sitio web realizado por <a href="https://verdragondesarrolloweb.com" target="_blank" title="verdragondesarrolloweb.com">VerdragonDesarrolloWeb</a>
+            <br />
+            Si requieres algun sitio web para tu negocio o persona, ya sea sitio web informativo, e-commerce, aplicación web, etc. 
+            puedes contactarnos <a href="https://verdragondesarrolloweb.com/contactos" target="_blank" title="contacto">Aquí</a>
+        </p>
+    </section>
     <!--Promociones-->
     <section id="promociones">
         <h2>Promociones</h2>
-        <article>
-            <div class="container-promo">
-                <h3 class="title-promo">Lunes</h3>
-                <img class="img-promo" src="./IMAGENES/Promociones/1.jpg" alt="">
-                <div class="text-promo">
-                    <p></p>
+        <article class="container-promociones">
+            <div class="container-promo relative">
+                <img class="img-promo absolute br-20" src="./IMAGENES/Promociones/1.jpg" alt="">
+                <h3 class="title-promo absolute">Lunes</h3>
+                <div class="text-promo absolute br-20">
+                    <p>25% de descuento en estudios de quimica clínica </p>
                 </div>
             </div>
-            <div class="container-promo">
-                <h3 class="title-promo">Lunes</h3>
-                <img class="img-promo" src="./IMAGENES/Promociones/2.jpg" alt="">
-                <div class="text-promo">
-                    <p></p>
+            <div class="container-promo relative">
+                <img class="img-promo absolute br-20" src="./IMAGENES/Promociones/2.jpg" alt="">
+                <h3 class="title-promo absolute">Martes</h3>
+                <div class="text-promo absolute br-20">
+                    <p>10% de descuento en estudios de citometría hematica y EGO</p>
                 </div>
             </div>
-            <div class="container-promo">
-                <h3 class="title-promo">Lunes</h3>
-                <img class="img-promo" src="./IMAGENES/Promociones/3.jpg" alt="">
-                <div class="text-promo">
-                    <p></p>
+            <div class="container-promo relative">
+                <img class="img-promo absolute br-20" src="./IMAGENES/Promociones/3.jpg" alt="">
+                <h3 class="title-promo absolute">Miercoles</h3>
+                <div class="text-promo absolute br-20">
+                    <p>10% de descuento en perfil tiroideo</p>
                 </div>
             </div>
         </article>
@@ -67,6 +80,26 @@
     <!--Contactos-->
     <section id="contacto">
         <h2>Contactos</h2>
+        <form action="">
+            <div>
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" id="nombre-contact">
+                <label for="correo">
+                    Correo: <input type="email" name="correo" id="correo-contact">
+                </label>
+                <label for="asunto">Asunto: </label>
+                <select name="asunto" id="asunto-contact">
+                    <option value="pregunta">duda</option>
+                    <option value="cotizacion">cotización</option>
+                    <option value="comentario">comentario</option>
+                    <option value="otro">otro</option>
+                </select>
+            </div>
+            <div>
+                <textarea name="mensaje" id="mensaje-contact" cols="30" rows="10"></textarea>
+            </div>
+            <button>Enviar</button>
+        </form>
     </section>
     <!--Footer-->
     <footer></footer>

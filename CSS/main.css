@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.br-20 {
+  border-radius: 20px;
+}
+
+.title, h2 {
+  width: 90%;
+  padding: 10px;
+  margin: 50px auto;
+  text-align: center;
+  border-top: 4px black solid;
+  border-bottom: 4px black solid;
+  font-size: 40px;
+  border-radius: 30px;
+}
+
+@media (min-width: 992px) {
+  .title, h2 {
+    width: 80%;
+    border-top: 8px black solid;
+    border-bottom: 8px black solid;
+    font-size: 70px;
+  }
+}
+.navbar {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: aliceblue;
+}
+.navbar ul {
+  display: none;
+  margin: 30px;
+  width: 100%;
+  background-color: aliceblue;
+}
+.navbar ul li {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin: 10px 0;
+}
+.navbar ul li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #292929;
+  transition: 2s all ease;
+}
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    background-color: rgba(240, 248, 255, 0.2);
+    transition: 0.5s all ease-in-out;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .navbar ul {
+    display: inline-block;
+    width: auto;
+    background-color: rgba(240, 248, 255, 0);
+  }
+  .navbar ul li {
+    width: auto;
+    margin: 0 20px;
+  }
+
+  .navbar:hover {
+    background-color: aliceblue;
+  }
+}
+#home {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../IMAGENES/lenteMicroscopio.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-home {
+  left: 0;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+  background-color: rgba(240, 248, 255, 0.295);
+}
+.text-home h1 {
+  font-size: 40px;
+}
+.text-home h3 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+#nosotros p {
+  padding: 10px 20px;
+  text-align: justify;
+}
+
+@media (min-width: 992px) {
+  .text-home {
+    width: 60%;
+    clip-path: polygon(0 0, 57% 0, 100% 100%, 0% 100%);
+  }
+  .text-home h1 {
+    font-size: 70px;
+  }
+  .text-home h3 {
+    font-size: 20px;
+  }
+
+  #nosotros p {
+    font-size: 25px;
+    padding: 20px 10%;
+  }
+}
+.relative {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.container-promociones {
+  width: 100%;
+  padding: 10px;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.container-promo {
+  display: flex;
+  justify-content: center;
+  width: 90vw;
+  height: 45vw;
+  background-color: palevioletred;
+  border-radius: 20px;
+  border: 1px red solid;
+}
+
+.title-promo {
+  background-color: goldenrod;
+}
+
+.img-promo {
+  background-color: violet;
+  width: 100%;
+  height: 100%;
+}
+
+.text-promo {
+  padding: 30px;
+  background-color: rgba(127, 255, 212, 0.219);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.text-promo:hover {
+  opacity: 1;
+}
+
+@media (min-width: 992px) {
+  .container-promociones {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .container-promo {
+    width: 100%;
+    height: 400px;
+  }
+
+  .text-promo {
+    opacity: 0;
+    transition: 1s all ease;
+  }
+
+  .text-promo:hover {
+    opacity: 1;
+  }
+}
+#contacto {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+#contacto form {
+  width: 80%;
+  max-width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  border: 1px solid red;
+}
+#contacto form input {
+  width: 100%;
+}
+#contacto form textarea {
+  width: 100%;
+  height: auto;
+  background-color: pink;
+}
+#contacto form div {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  #contacto {
+    width: 100%;
+  }
+  #contacto form {
+    border: 1px solid red;
+  }
+  #contacto form div {
+    width: 50%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
