@@ -178,7 +178,6 @@ body {
   margin: 20px auto;
   background-color: palevioletred;
   border-radius: 20px;
-  border: 1px red solid;
 }
 
 .title-promo {
@@ -287,7 +286,7 @@ body {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
+.prev, .next {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -384,36 +383,97 @@ body {
 }
 #contacto {
   width: 100%;
+  padding: 10px;
   height: auto;
   display: flex;
   flex-wrap: wrap;
 }
+#contacto article {
+  margin: 40px 0;
+}
+#contacto article h4 {
+  text-align: center;
+  margin-top: 10px;
+}
+#contacto article p {
+  margin-bottom: 20px;
+  text-align: center;
+}
+#contacto article a {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  text-emphasis: inherit;
+  color: black;
+  font-size: 12px;
+}
 #contacto form {
   width: 80%;
-  max-width: 500px;
+  max-width: 700px;
   display: flex;
   flex-wrap: wrap;
   margin: auto;
-  border: 1px solid red;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgba(105, 105, 105, 0.61);
+  border: 2px solid black;
+  color: wheat;
+  text-align: center;
+  font-size: large;
+  font-weight: 600;
 }
-#contacto form input {
+#contacto form input, #contacto form select {
   width: 100%;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: medium;
+  font-weight: 400;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 #contacto form textarea {
   width: 100%;
   height: auto;
-  background-color: pink;
+  padding: 10px;
+  background-color: #f1fcf9;
 }
 #contacto form div {
   width: 100%;
+}
+#contacto form button {
+  width: 80%;
+  margin: 10px auto;
+  background: black;
+  color: #fcfcfc;
+  font-weight: 900;
+  padding: 5px 10px;
+}
+#contacto form input, #contacto form textarea, #contacto form button {
+  border-radius: 20px;
 }
 
 @media (min-width: 992px) {
   #contacto {
     width: 100%;
+    padding: 30px 20px;
+    justify-content: space-between;
+  }
+  #contacto article {
+    width: 40%;
+  }
+  #contacto article h4 {
+    font-size: large;
+    font-weight: 900;
+  }
+  #contacto article a, #contacto article p {
+    font-size: medium;
+    font-weight: 400;
   }
   #contacto form {
-    border: 1px solid red;
+    width: 60%;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 15px 15px 5px #5c5c5c;
   }
   #contacto form div {
     width: 50%;
