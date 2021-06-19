@@ -15,19 +15,23 @@
     height: auto;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
 }
 .container-promo{
     display: flex;
     justify-content: center;
     width: 90vw;
     height: 45vw;
+    margin: 20px auto;
     background-color: palevioletred;
     border-radius: 20px;
     border: 1px red solid;
 }
 .title-promo{
-    background-color: goldenrod;
+    background: goldenrod;
+    display: inline-block;
+    border-radius: 20px;
+    font-size: medium;
+    padding: 1px 2px;
 }
 .img-promo{
     background-color: violet;
@@ -36,11 +40,18 @@
 }
 .text-promo{
     padding: 30px;
-    background-color: rgba(127, 255, 212, 0.219);
+    background-color: rgba(4, 82, 56, 0.822);
+    border-radius: 20px;
+    color: aliceblue;
     width: 100%;
     height: 100%;
+    text-align: justify;
+    overflow-y: scroll;
     opacity: 0;
     transition: 1s all ease;
+    p:first-child{
+        text-align: center;
+    }
 }
 .text-promo:hover{
     opacity: 1;
@@ -48,20 +59,37 @@
 @media (min-width: 576px) {  }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {  }
+@media (min-width: 768px) { 
+    .title-promo{
+        border-radius: 20px;
+        font-size: medium;
+        padding: 4px 10px;
+    }
+ }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
     .container-promociones{
         grid-template-columns: 1fr 1fr;
+        gap: 20px;
     }
     .container-promo{
         width: 100%;
         height: 400px;
     }
     .text-promo{
+        font-size: medium;
+        padding: 1px 2px;
         opacity: 0;
         transition: 1s all ease;
+        overflow-y: hidden;
+        p{
+            margin: 10px 30px;
+            font-size: large;
+        }
+        p:first-child{
+            font-size: larger;
+        }
     }
     .text-promo:hover{
         opacity: 1;

@@ -36,7 +36,7 @@
             Este sitio web es una página muestra, los datos aquí presentados son ficticios y no representan 
             atribución ni hacen referencia a alguien, cualquier parecido con la realiad es mera coincidencia.
             Sitio web realizado por <a href="https://verdragondesarrolloweb.com" target="_blank" title="verdragondesarrolloweb.com">VerdragonDesarrolloWeb</a>
-            <br />
+            <br /> <br />
             Si requieres algun sitio web para tu negocio o persona, ya sea sitio web informativo, e-commerce, aplicación web, etc. 
             puedes contactarnos <a href="https://verdragondesarrolloweb.com/contactos" target="_blank" title="contacto">Aquí</a>
         </p>
@@ -48,22 +48,28 @@
             <div class="container-promo relative">
                 <img class="img-promo absolute br-20" src="./IMAGENES/Promociones/1.jpg" alt="">
                 <h3 class="title-promo absolute">Lunes</h3>
-                <div class="text-promo absolute br-20">
+                <div class="text-promo absolute">
                     <p>25% de descuento en estudios de quimica clínica </p>
+                    <br/>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus tempore, ex eos mollitia iure magnam. Officiis asperiores cumque perspiciatis. Repellat, quo quisquam. Aspernatur rerum animi repellat optio natus cum perferendis.</p>
                 </div>
             </div>
             <div class="container-promo relative">
                 <img class="img-promo absolute br-20" src="./IMAGENES/Promociones/2.jpg" alt="">
                 <h3 class="title-promo absolute">Martes</h3>
-                <div class="text-promo absolute br-20">
+                <div class="text-promo absolute">
                     <p>10% de descuento en estudios de citometría hematica y EGO</p>
+                    <br/>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus tempore, ex eos mollitia iure magnam. Officiis asperiores cumque perspiciatis. Repellat, quo quisquam. Aspernatur rerum animi repellat optio natus cum perferendis.</p>
                 </div>
             </div>
             <div class="container-promo relative">
                 <img class="img-promo absolute br-20" src="./IMAGENES/Promociones/3.jpg" alt="">
                 <h3 class="title-promo absolute">Miercoles</h3>
-                <div class="text-promo absolute br-20">
+                <div class="text-promo absolute">
                     <p>10% de descuento en perfil tiroideo</p>
+                    <br/>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus tempore, ex eos mollitia iure magnam. Officiis asperiores cumque perspiciatis. Repellat, quo quisquam. Aspernatur rerum animi repellat optio natus cum perferendis.</p>
                 </div>
             </div>
         </article>
@@ -71,11 +77,53 @@
     <!--Paquetes-->
     <section id="paquetes">
         <h2>Paquetes</h2>
-        <img class="carrousel-paquetes" src="" alt="">
+        <article class="container-praquetes">
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="./IMAGENES/Promociones/1.jpg" style="width:100%">
+                <div class="text">Caption Text</div>
+                </div>
+            
+                <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="./IMAGENES/Promociones/2.jpg" style="width:100%">
+                <div class="text">Caption Two</div>
+                </div>
+            
+                <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="./IMAGENES/Promociones/3.jpg" style="width:100%">
+                <div class="text">Caption Three</div>
+                </div>
+            
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div> 
+        </article>
     </section>
     <!--Ubicación-->
     <section id="ubicacion">
         <h2>Ubicación</h2>
+        <article class="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d18014.53440849162!2d-99.54067400398553!3d1    8.343207654062066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1622584298216!5m2!1ses-419!2smx" width="600" height="450"     style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </article>
+        <article class="direction">
+            <h3>Dirección</h3>
+            <p></p>
+        </article>
     </section>
     <!--Contactos-->
     <section id="contacto">
@@ -103,5 +151,6 @@
     </section>
     <!--Footer-->
     <footer></footer>
+    <script src="./JS/paquetes.js"></script>
 </body>
 </html>

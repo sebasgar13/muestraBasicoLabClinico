@@ -27,12 +27,29 @@
     p{
         padding: 10px 20px;
         text-align: justify;
+        font-family: Arial, Helvetica, sans-serif;
     }
 }
 @media (min-width: 576px) {  }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {  }
+@media (min-width: 768px) { 
+    .text-home{
+        h3{
+            font-size: 30px;
+            margin-top: 15px;
+        }
+        
+    }
+    #nosotros{
+        p{
+            padding: 10px 40px;
+            text-align: justify;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+        }
+    }
+ }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
